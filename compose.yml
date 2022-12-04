@@ -1,0 +1,4 @@
+services:
+  volindo-tech-assignment:
+    image: waldoibarra/volindo-tech-assignment
+    build: .
