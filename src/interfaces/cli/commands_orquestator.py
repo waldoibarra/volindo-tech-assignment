@@ -1,14 +1,14 @@
 import os
 import sys
 
-from ...application import Part1Action
+from ...application import Part1Action, Part2Action
 from ...infrastructure.adult_50k_dataset import Adult50kDataset
 
 input_dataset_filename = "adult_50k.csv"
 
 
 class CommandsOrquestator():
-    valid_commands = ["part-1"]
+    valid_commands = ["part-1", "part-2"]
 
     def __init__(self):
         self.clear()
@@ -22,6 +22,8 @@ class CommandsOrquestator():
         match self.command:
             case "part-1":
                 action = Part1Action(adult_50k_dataset)
+            case "part-2":
+                action = Part2Action(adult_50k_dataset)
 
         action.execute()
 

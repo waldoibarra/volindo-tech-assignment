@@ -6,5 +6,9 @@ class IDataset(ABC):
         pass
 
     @abstractmethod
-    def print_columns_type_information() -> None:
+    def print_columns_type_information(self) -> None:
+        pass
+
+    @abstractmethod
+    def print_columns_balanceness(self) -> None:
         pass

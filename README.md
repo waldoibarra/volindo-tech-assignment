@@ -14,8 +14,20 @@ Instructions are to be found at [docs/assignment.md](docs/assignment.md).
 
 ### Answer For Part 1
 
+On a terminal run:
+
 ``` sh
 make part-1
 ```
 
 ![screenshot of answer 1](docs/part-1-answer.jpg)
+
+### Answer For Part 2
+
+On a terminal run:
+
+``` sh
+make part-2
+```
+
+![screenshot of answer 2](docs/part-2-answer.jpg)
