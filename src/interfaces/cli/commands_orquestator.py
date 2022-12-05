@@ -40,8 +40,8 @@ class CommandsOrquestator():
             self.exit("{} is not a valid command.".format(command))
 
     def show_welcome_message(self):
-        self.clear()
         print("Welcome to my solution!")
+        print("-----------------------\n")
 
     def exit(self, message):
         print(message)

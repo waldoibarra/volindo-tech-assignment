@@ -6,4 +6,5 @@ class Part1Action(IAction):
         self.dataset = dataset
 
     def execute(self):
-        self.dataset.print_column_information_type()
+        print("Answer for part 1:\n")
+        self.dataset.print_columns_type_information()
