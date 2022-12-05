@@ -1,6 +1,6 @@
 # Volindo's Technical Assignment
 
-Instructions are to be found at [assignment.md](assignment.md).
+Instructions are to be found at [docs/assignment.md](docs/assignment.md).
 
 ## Key Features
 
@@ -17,3 +17,5 @@ Instructions are to be found at [assignment.md](assignment.md).
 ``` sh
 make part-1
 ```
+
+![screenshot of answer 1](docs/part-1-answer.jpg)
