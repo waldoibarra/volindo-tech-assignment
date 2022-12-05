@@ -4,6 +4,8 @@ import sys
 from ...application import Part1Action
 from ...infrastructure.adult_50k_dataset import Adult50kDataset
 
+input_dataset_filename = "adult_50k.csv"
+
 
 class CommandsOrquestator():
     valid_commands = ["part-1"]
@@ -15,7 +17,7 @@ class CommandsOrquestator():
         self.show_welcome_message()
 
     def execute(self):
-        adult_50k_dataset = Adult50kDataset()
+        adult_50k_dataset = Adult50kDataset(input_dataset_filename)
 
         match self.command:
             case "part-1":
