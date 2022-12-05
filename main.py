@@ -1,10 +1,3 @@
-from src.interfaces.cli import CommandsOrquestator
+from src.app import App
 
-
-class Main():
-    def execute(self):
-        orquestator = CommandsOrquestator()
-        orquestator.execute()
-
-
-Main().execute()
+App().execute()
