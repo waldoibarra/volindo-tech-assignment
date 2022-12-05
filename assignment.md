@@ -25,9 +25,11 @@ Print which columns from the dataset are categorical or continuous.For categoric
 
 ### Example output:
 
+``` sh
 age - continuous - 97 values - 0 to 120
 sex - categorical - 2 values - Male, Female
 ...
+```
 
 ### Condition:
 
@@ -39,10 +41,13 @@ Print if a categorical column is imbalanced, its minimum occurrence and the occu
 All continuous columns are assumed to be balanced.
 
 ### Example output:
+
+``` sh
 sex - categorical - balanced -  5% min occurrence - Male 60%, Female 40%
 race - categorical -  imbalanced - 3.33% min occurrence - White 60%, Black 30%, Asian 10%
 age - continuous - balanced
 ...
+```
 
 Hint: a column is imbalanced if one of its categories occurs strictly less than 10% of its occurrence (known as the minimum occurrence). The occurrence is 100% divided by the number of categories. Eg: you have categories A, B, C, D  and E. The occurrence is 20% and the minimum occurrence is 2%. If one of the 5 categories occurs less than 2%, then the column is deemed imbalanced.
 
@@ -51,13 +56,18 @@ Hint: a column is imbalanced if one of its categories occurs strictly less than 
 It is now time to fix the imbalanced columns. 
 Generate data points (new rows) to add to the input dataset so that all the columns become balanced.Bonus: generate the minimum amount possible.
 Print the amount of rows added.Add the two datasets together and then call the part 2 function/object again.
+
 Make sure to:
-Keep the previously balanced columns still balanced.
-Sample continuous columns randomly but within their min/max range.
-Due to its long tail distribution, it is ok if the ‘native-country’ variable is still unbalanced.
+
+- Keep the previously balanced columns still balanced.
+- Sample continuous columns randomly but within their min/max range.
+- Due to its long tail distribution, it is ok if the ‘native-country’ variable is still unbalanced.
 
 ### Example output:
+
+``` sh
 100235 rows added 
 sex - balanced
 race - balanced
 ...
+```
